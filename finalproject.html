@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SheCodes Basic final</title>
+</head>
+<body>
+    <style>
+        body {
+            background: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+        }
+        h1{
+            text-align: center;
+            font-size: 40px;
+        }
+        h2{
+            text-align: center;
+            font-weight: 100;
+           line-height: 100px;
+        }
+        p{
+            text-align: center;
+          line-height: 20px;
+        }
+        img {
+            width: 50%;
+           margin: auto;
+           display: block;
+           width: 220px;
+        }
+        button{
+            border-radius:30px;
+      box-shadow: 2px 5px 5px 5px rgba(0, 0, 0, 0.2);
+      margin: 20px auto;
+      display:block;
+      color:#000;
+      font-size: 16px;
+      background: transparent;
+      padding: 15px 20px;
+      transition: all 20ms ease-in-out;
+      border: #000;
+        }
+        button:hover{
+            background: #F8F8F8;
+            cursor: pointer;
+        }
+        span{
+            color: gray;
+        }
+        div{
+            text-align: center;
+        }
+        .paragraph{
+            margin: auto;
+            width: 500px;
+        }
+    </style>
+    <h1>
+        Cartagena
+    </h1>
+    <hr>
+    <h2>
+      <em>and some of it's history... </em>  
+    </h2>
+  <div class="paragraph">
+    <p>
+              Cartagena was founded around the year 227 B.C. by the Carthaginian General Hasdrubal, on the
+            site of an old settlement, and had its heyday in Roman times under the name Carthago Nova. The
+            ci
+            ty was part of the Byzantine Empire, was destroyed by the Visigoths and fell under Muslim
+            control from 734 to 1245. From the 16th century the city played an important military role thanks
+            to the strategic importance of its port, and in the 18th century it became the capital of the
+            Mediterranean Maritime Department. <br>
+            <br>
+            In the second half of the 20th century Cartagena thrived once more thanks to the boom in the
+            mining industry, which in turn boosted industry and trade there. The city suffered the dramatic
+            consequences of the Civil War, during which it was one of the main strongholds of the republican
+            government and, together with Alicante, the last city to fall into the hands of General Franco.
+            Nowadays, now that the mineral resources have been exhausted, Cartagena lives mainly off
+            shipbuilding and repair, petrol refinery and exporting olive oil, fruit, vegetables, esparto, wine and
+            metal products. It is also one of the country’s main naval bases and an increasingly popular tourist
+            attraction thanks to its important historic and cultural heritage. 
+
+    </p>
+</div>
+   <img src="/Users/martamadridgarcia/Desktop/Ct.jpeg" />
+
+   <p>
+    <strong>
+        <span> Subscribe to receive updates about Cartagena</span>
+    </strong>
+   </p>
+   
+   <button>
+    Subscribe
+   </button>
+   <a href="https://www.skyscanner.net/" target="_blank" class="flightFinder" title="skyscanner">Find flights for Cartagena here</a>
+</a>
+<script>
+      
+    function Updates() {
+      let  via = prompt("What is your preferred way of contact?");
+     
+      if (via === "email") {
+        alert ("We will email you soon 📨");
+      } else {
+        alert ("We will contact you soon ☎️");
+      }
+    }
+    let buttonElement = document.querySelector("button")
+    buttonElement.addEventListener("click", Updates)
+    
+</script>
+</body>
+</html>
